@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<h1>SOC hotline portal</h1>
+
+{% endblock %}
+
+{% block body %}
+
+
+<form action="/submit" method="post">
+  <div>  
+  <label for="shift">Shift</label>
+  <select id="shift" name="shift">
+    <option value="Morning">Morning</option>
+    <option value="Evening">Evening</option>
+    <option value="Night">Night</option>
+    
+  </select>
+</div>
+
+  <div class="form-group">
+    <label></label>
+    <input type="text" class="form-control" id="isem3" name="isem3" placeholder="#58003">
+  </div>
+
+<div class="form-group">
+    <label></label>
+    <input type="text" class="form-control" id="csm7" name="csm7" placeholder="#58007">
+  </div>
+
+
+<div class="form-group">
+    <label></label>
+    <input type="text" class="form-control" id="csm8" name="csm8" placeholder="#58008">
+  </div>
+
+<div class="form-group">
+    <label></label>
+    <input type="text" class="form-control" id="rnbm1" name="rnbm1" placeholder="#58001">
+  </div>
+
+  <div class="form-group">
+    <label></label>
+    <input type="text" class="form-control" id="rnbm5" name="rnbm5" placeholder="#58005">
+  </div>
+
+  <div class="form-group">
+    <label></label>
+    <input type="text" class="form-control" id="rnbm9" name="rnbm9" placeholder="#58009">
+  </div>
+
+  <div class="form-group">
+    <label></label>
+    <input type="text" class="form-control" id="cmpm" name="cmpm" placeholder="CMPM">
+  </div>
+
+
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+{% endblock %}
